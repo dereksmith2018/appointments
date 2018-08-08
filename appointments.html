@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Appointments</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet"     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -12,17 +12,41 @@
   <body>
     <h1>Make an appointment</h1>
     <div class="container">
+      <form id="formOne">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
 
+        <div>
+          <label for="description">Reason for the appointment:</label>
+          <input id="description" class="form-control" type="text">
+        </div>
 
-      <ul>
-        <li>Name:<span></span></li>
-        <br>
-        <li>Descriptionof the appointment:<span></span></li>
-        <br>
-        <li>Appointment date:<span></span></li>
-        <br>
-        <li>Appointment time:<span></span></li>
-      </ul>
-      </div>
+        <div>
+          <label for="appointment">Date preferred for appointment:</label>
+          <input id="" class="form-control" type="date">
+        </div>
+
+       <div>
+        <label for="time"> Preferred time for the appointment:</label>
+        <input id="time" class="form-control" type="text">
+       </div>
+
+        <button type="submit" class="btn">Send to receptionist to schedule
+        </button>
+
+        <ul>
+          <li>Name:<span id="name5"></span></li>
+          <br>
+          <li>Description of the appointment:<span id="describe5"></span></li>
+          <br>
+          <li>Appointment date:<span id="date5"></span></li>
+          <br>
+          <li>Appointment time:<span id="time5"></span></li>
+        </ul>
+
+      </form>
+    </div>
   </body>
-</html>
+ </html>
